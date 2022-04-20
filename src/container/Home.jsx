@@ -15,7 +15,6 @@ const Home = () => {
 const [toggleSidebar, setToggleSidebar] = useState(false);
 const [user, setUser] = useState(null)
 
-let navigate = useNavigate();
 
 
 
@@ -35,10 +34,7 @@ useEffect(() => {
   scrollRef.current.scrollTo(0, 0)
 }, [])
 
- if (!user) {
-   navigate("/login", { replace: true });
-   
- }
+
 
 
 
